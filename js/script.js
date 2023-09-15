@@ -88,7 +88,8 @@ function getUser(username) {
 
 
 
-consultar.addEventListener('click', function () {
+consultar.addEventListener('click', function (e) {
+    e.preventDefault()
     const username = userInput.value.trim()
     console.log("valor do campo de entrada:", username)
     inputVazio()
